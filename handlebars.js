@@ -1,8 +1,7 @@
 $(document).on('ready', function() {
 
-var source = $('#videoGames').html();
-
-var template = Handlebars.compile(source);
+	var source = $('#videoGames').html();
+	var template = Handlebars.compile(source);
 
 for (var i=0; i<productsData.productsList.length; i++) {
 	template(i);
