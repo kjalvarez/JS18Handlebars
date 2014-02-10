@@ -15,7 +15,7 @@ var listSource = $('#wishes').html();
 var listTemplate = Handlebars.compile(listSource);
 
 $('.addButton').on('click', function() {
-	var newDiv=listTemplate(this.title);
+	var newDiv=listTemplate(productsData.productsList[1]);
 	$('#wishList').append(newDiv);
 	}) 
 
