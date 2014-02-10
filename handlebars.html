@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="handlebars.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
   <link href='http://fonts.googleapis.com/css?family=Wallpoet' rel='stylesheet' type='text/css'>
   <title>Handlebars</title>
 </head>
@@ -11,28 +12,25 @@
 <h1 class="headingStyle">GAMESTORE:</h1>
 	<h2 class="headingStyle2">Your source for games</h2>
 		<div id='product-container'>
-		</div>
 			<script id= "videoGames" type="text/x-handlebars-template">
 			<div class = "product">
 			<h3>{{title}}</h3>
 			<img src={{image}}>
 			<p>${{cost}}</p>
-			<button type="button" id="addButton">Wish List</button>
+			<button type="button" class="addButton">Wish List</button>
 			</div>
 			</script>
-
-		<div id='product-container'>
 		</div>
 
-		<ul id = "wishItems">
-		</ul>
-	
+			<ul id = 'wishList'>	
+			</ul>
+
 		
-		<script id= "wishList" type="text/x-handlebars-template">
-			<li class = "wishListItem">
-				<h3>{{title}}</h3>
-				<button type="button" id="deleteButton">Remove</button>
-			</li>
+		<script id= "wishes" type="text/x-handlebars-template">
+				<li class = "wishListItem">
+					<h3>{{title}}</h3>
+					<button type="button" id="deleteButton">Remove</button>
+				</li>
 		</script>
 	
 <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>

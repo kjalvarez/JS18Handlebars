@@ -11,11 +11,12 @@ for (var i=0; i<productsData.productsList.length; i++) {
 
 };
 
-var listSource = $('#wishList').html();
+var listSource = $('#wishes').html();
 var listTemplate = Handlebars.compile(listSource);
 
-$('#addButton').on('click', function() {
-	alert('add')
-	}) /*How to get addButton class to apply to all wish list buttons?*/
+$('.addButton').on('click', function() {
+	var newDiv=listTemplate(this.title);
+	$('#wishList').append(newDiv);
+	}) 
 
 });

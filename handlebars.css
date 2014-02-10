@@ -16,7 +16,7 @@ body {
 
 }
 
-#addButton {
+.addButton {
 	background-color: orange;
 	width: 20%;
 	font-family: "Wallpoet";
