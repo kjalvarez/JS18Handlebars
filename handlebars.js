@@ -14,9 +14,12 @@ for (var i=0; i<productsData.productsList.length; i++) {
 var listSource = $('#wishes').html();
 var listTemplate = Handlebars.compile(listSource);
 
-$('.addButton').on('click', function() {
-	var newDiv=listTemplate(productsData.productsList[1]);
+$('.addButton').on('click', function() { /*Is there a better way to do this or is this (with object of clickObj) ok? */
+	var clickObj = {
+		title: ($(this).closest('.product').find('h3').text())
+	}
+	var newDiv=listTemplate(clickObj);
 	$('#wishList').append(newDiv);
-	}) 
+	});
 
 });
