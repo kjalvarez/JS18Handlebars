@@ -28,4 +28,6 @@ var productsData = {
       }
     }
   ]
+
 }
+
