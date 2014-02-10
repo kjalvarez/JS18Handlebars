@@ -1,8 +1,7 @@
 body {
 	background: url(nintendo.jpg);
 	font-family: "Wallpoet";
-	margin-left: 30%;
-	margin-right: 30%;
+	margin-left: 20%;
 
 }
 
@@ -26,5 +25,15 @@ body {
 #deleteButton {
 	width: 20%;
 	background-color: green;
+	font-family: "Wallpoet";
 }
 
+#product-container {
+	display: inline-block;
+}
+
+#wish-container {
+	display: inline-block;
+	width: 50%;
+	float: right;
+}
