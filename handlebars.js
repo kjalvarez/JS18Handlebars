@@ -1,7 +1,7 @@
 $(document).on('ready', function() {
 
-	var source = $('#videoGames').html();
-	var template = Handlebars.compile(source);
+var source = $('#videoGames').html();
+var template = Handlebars.compile(source);
 	
 
 for (var i=0; i<productsData.productsList.length; i++) {
@@ -10,5 +10,12 @@ for (var i=0; i<productsData.productsList.length; i++) {
 	$('#product-container').append(newDiv);
 
 };
+
+var listSource = $('#wishList').html();
+var listTemplate = Handlebars.compile(listSource);
+
+$('#addButton').on('click', function() {
+	alert('add')
+	}) /*How to get addButton class to apply to all wish list buttons?*/
 
 });

@@ -9,17 +9,31 @@
 </head>
 <body>
 <h1 class="headingStyle">GAMESTORE:</h1>
-<h2 class="headingStyle2">Your source for games</h2>
-	<script id= "videoGames" type="text/x-handlebars-template">
-		<div class = "product">
-		<h3>{{title}}</h3>
-		<img src={{image}}>
-		<p>${{cost}}</p>
+	<h2 class="headingStyle2">Your source for games</h2>
+		<div id='product-container'>
 		</div>
-	</script>
+			<script id= "videoGames" type="text/x-handlebars-template">
+			<div class = "product">
+			<h3>{{title}}</h3>
+			<img src={{image}}>
+			<p>${{cost}}</p>
+			<button type="button" id="addButton">Wish List</button>
+			</div>
+			</script>
 
 		<div id='product-container'>
 		</div>
+
+		<ul id = "wishItems">
+		</ul>
+	
+		
+		<script id= "wishList" type="text/x-handlebars-template">
+			<li class = "wishListItem">
+				<h3>{{title}}</h3>
+				<button type="button" id="deleteButton">Remove</button>
+			</li>
+		</script>
 	
 <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.3.0/handlebars.min.js"></script>
