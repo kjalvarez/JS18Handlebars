@@ -37,3 +37,7 @@ body {
 	width: 50%;
 	float: right;
 }
+
+.deleteStyle {
+	display: none;
+}
