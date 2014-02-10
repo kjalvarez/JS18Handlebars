@@ -22,7 +22,7 @@ body {
 
 }
 
-#deleteButton {
+.deleteButton {
 	width: 20%;
 	background-color: green;
 	font-family: "Wallpoet";

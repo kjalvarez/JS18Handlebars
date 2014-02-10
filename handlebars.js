@@ -22,4 +22,8 @@ $('.addButton').on('click', function() { /*Is there a better way to do this or i
 	$('#wishList').append(newDiv);
 	});
 
+$(document).on('click', '.deleteButton', function () {
+		alert('Hey!');
+	});
+
 });
