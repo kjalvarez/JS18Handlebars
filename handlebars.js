@@ -24,7 +24,7 @@ $('.addButton').on('click', function() { /*Is there a better way to do this or i
 
 $(document).on('click', '.deleteButton', function () {
 	($(this).closest('li').hide());
-	$('.deleteButton').closest.hide();
+	$(this).closest('deleteButton').hide();
 	;
 
 	});
